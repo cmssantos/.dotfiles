@@ -1,0 +1,7 @@
+[Unit]
+Description=Conky Startup (Wayland-safe with delay)
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/csantos/.config/conky/Maia/start.sh

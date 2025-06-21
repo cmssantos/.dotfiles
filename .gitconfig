@@ -1,0 +1,12 @@
+[user]
+    name = Cleudice Santos
+    email = cleudice.ms@gmail.com
+
+[core]
+    editor = nano
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
