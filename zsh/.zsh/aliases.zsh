@@ -1,0 +1,11 @@
+alias ll='ls -lah'
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit'
+alias gco='git checkout'
+alias gp='git pull'
+alias gpp='git push'
+
+alias k='kubectl'
+alias kgp='kubectl get pods'
+alias kgs='kubectl get svc'

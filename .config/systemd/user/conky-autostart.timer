@@ -1,9 +1,0 @@
-[Unit]
-Description=Delay Conky start to avoid GNOME Wayland issues
-
-[Timer]
-OnBootSec=30
-Unit=conky-autostart.service
-
-[Install]
-WantedBy=default.target
