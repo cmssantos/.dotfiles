@@ -1,0 +1,37 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || editorFocus && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && sideBarFocus"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open",
+    "when": "!chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "geminicodeassist.showinEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.view.extension.geminiChat"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "geminicodeassist.generateCode",
+    "when": "editorTextFocus && !inGeminiDiffView"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "cloudcode.duetAI.chatGenerateTests",
+    "when": "editorTextFocus"
+  }
+]
