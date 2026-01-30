@@ -1,206 +1,229 @@
 {
-    /* =========================================================
+  /* =========================================================
      🤖 IA — CONFIGURAÇÃO HÍBRIDA (COPILOT + GEMINI)
      ========================================================= */
-    // 1. ATIVE o Copilot para o Autocomplete (Ghost Text)
-    "github.copilot.enabled": true,
-    "github.copilot.inlineSuggest.enable": true,
-    "github.copilot.nextEditSuggestions.enabled": true,
-    // 2. CONFIGURE o Gemini para focar no Contexto e Chat
-    "geminicodeassist.inlineSuggestions.enableAuto": false, // DESATIVE aqui para o Gemini não brigar com o Copilot no "Ghost Text"
-    "geminicodeassist.project": "copper-compass-8ft69",
-    "geminicodeassist.rules": "You are a Senior .NET Backend Architect. Context: Clean Architecture, SOLID, DDD. Layer focus: Domain, Application, Infrastructure, API. Use Result Pattern, MediatR, and records. Focus on architectural integrity.",
-    /* =========================================================
+  // 1. ATIVE o Copilot para o Autocomplete (Ghost Text)
+  "github.copilot.enabled": true,
+  "github.copilot.inlineSuggest.enable": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  // 2. CONFIGURE o Gemini para focar no Contexto e Chat
+  "geminicodeassist.inlineSuggestions.enableAuto": false, // DESATIVE aqui para o Gemini não brigar com o Copilot no "Ghost Text"
+  "geminicodeassist.project": "copper-compass-8ft69",
+  "geminicodeassist.rules": "You are a Senior .NET Backend Architect. Context: Clean Architecture, SOLID, DDD. Layer focus: Domain, Application, Infrastructure, API. Use Result Pattern, MediatR, and records. Focus on architectural integrity.",
+  /* =========================================================
      🔕 IA NATIVA DO VS CODE (OPCIONAL)
      ========================================================= */
-    // Se você quer usar o Chat do Gemini dentro da barra lateral do Copilot:
-    "chat.agent.enabled": true,
-    "window.commandCenter": false, // Reativar o Command Center ajuda a trocar de modelo (GPT-4o vs Gemini)
-    /* =========================================================
+  // Se você quer usar o Chat do Gemini dentro da barra lateral do Copilot:
+  "chat.agent.enabled": true,
+  "window.commandCenter": false, // Reativar o Command Center ajuda a trocar de modelo (GPT-4o vs Gemini)
+  /* =========================================================
      🧠 INTELLISENSE (AJUSTADO PARA COPILOT)
      ========================================================= */
-    "editor.inlineSuggest.enabled": true,
-    "editor.quickSuggestions": {
-        "other": "on",
-        "comments": "on",
-        "strings": "on"
-    },
-    "editor.suggestOnTriggerCharacters": true,
-    "editor.snippetSuggestions": "top",
-    "editor.tabCompletion": "on",
-    "editor.parameterHints.enabled": true,
-    "editor.hover.enabled": "on",
-    /* =========================================================
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on",
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "editor.parameterHints.enabled": true,
+  "editor.hover.enabled": true,
+  /* =========================================================
      ✍️ EDITOR — COMPORTAMENTO E PRODUTIVIDADE
      ========================================================= */
-    "editor.lineNumbers": "relative",
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.matchBrackets": "near",
-    "editor.selectionHighlight": true,
-    "editor.occurrencesHighlight": "off",
-    "editor.codeLens": false,
-    "editor.links": false,
-    "editor.lightbulb.enabled": "off",
-    "editor.detectIndentation": false,
-    "editor.showFoldingControls": "mouseover",
-    "editor.guides.indentation": false,
-    "editor.renderWhitespace": "none",
-    "editor.renderLineHighlight": "none",
-    "editor.colorDecorators": false,
-    /* =========================================================
+  "editor.lineNumbers": "relative",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.matchBrackets": "near",
+  "editor.selectionHighlight": true,
+  "editor.occurrencesHighlight": "off",
+  "editor.codeLens": true,
+  "editor.links": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.detectIndentation": false,
+  "editor.showFoldingControls": "mouseover",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.colorDecorators": false,
+  /* =========================================================
      📐 SCROLL / OVERVIEW RULER
      ========================================================= */
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "visible",
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "editor.hideCursorInOverviewRuler": true,
-    /* =========================================================
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.hideCursorInOverviewRuler": true,
+  /* =========================================================
      🧹 HIGIENE E AUTOMAÇÃO
      ========================================================= */
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "explicit"
-    },
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "files.autoSave": "afterDelay",
-    /* =========================================================
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  /* =========================================================
      🌳 GIT, SCM E EXPLORER
      ========================================================= */
-    "git.autofetch": true,
-    "git.decorations.enabled": false,
-    "scm.diffDecorations": "none",
-    "explorer.decorations.badges": false,
-    "explorer.compactFolders": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "files.exclude": {
-        "**/bin": true,
-        "**/obj": true,
-        "**/*.csproj": true
-    },
-    "search.exclude": {
-        "**/bin": true,
-        "**/obj": true
-    },
-    /* =========================================================
+  "git.autofetch": true,
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+  "explorer.decorations.badges": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "**/*.csproj": true,
+  },
+  "search.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+  },
+  /* =========================================================
      🧱 PADRÕES POR LINGUAGEM
      ========================================================= */
-    "[csharp]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false
-    },
-    "[sql]": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false
-    },
-    "[json]": {
-        "editor.tabSize": 2,
-        "editor.detectIndentation": false
-    },
-    "[yaml]": {
-        "editor.tabSize": 2,
-        "editor.detectIndentation": false
-    },
-    "[xml]": {
-        "editor.tabSize": 2,
-        "editor.detectIndentation": false
-    },
-    /* =========================================================
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+  },
+  "[sql]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+  },
+  "[xml]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+  },
+  /* =========================================================
      🎨 VISUAL — TEMA, FONTE E LAYOUT
      ========================================================= */
-    "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.8,
-    "editor.minimap.enabled": false,
-    "editor.stickyScroll.enabled": false,
-    "window.zoomLevel": 3,
-    "window.customTitleBarVisibility": "auto",
-    "window.title": "${activeEditorShort}",
-    "window.menuBarVisibility": "compact",
-    "workbench.activityBar.location": "hidden",
-    "workbench.sideBar.location": "right",
-    "workbench.editor.showTabs": "none",
-    "breadcrumbs.enabled": false,
-    "workbench.startupEditor": "none",
-    "workbench.tips.enabled": false,
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.statusBar.visible": false,
-    "material-icon-theme.hidesExplorerArrows": true,
-    "workbench.tree.enableStickyScroll": false,
-    "workbench.tree.renderIndentGuides": "none",
-    "workbench.tree.indent": 8,
-    /* =========================================================
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.8,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "window.zoomLevel": 3,
+  "window.customTitleBarVisibility": "auto",
+  "window.title": "${activeEditorShort}",
+  "window.menuBarVisibility": "compact",
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "none",
+  "breadcrumbs.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "default",
+  "workbench.statusBar.visible": true,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
+  /* =========================================================
      🧪 CUSTOM UI / CSS
      ========================================================= */
-    "window.titleBarStyle": "custom",
-    "custom-ui-style.font.sansSerif": "JetBrains Mono",
-    "custom-ui-style.stylesheet": {
-        ".notification-toast": "box-shadow: none !important",
-        ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-        ".quick-input-widget": "top: 25vh !important",
-        ".quick-input-list .scrollbar": "display: none",
-        ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-        ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-        ".quick-input-titlebar": "background: #100B15 !important",
-        ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-        ".monaco-scrollable-element > .shadow.top": "display: none",
-        ".sidebar .title-label": "padding: 0 !important",
-        ".sidebar": "border: none !important",
-        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-        ".monaco-list-row.focused": "outline: none !important",
-        ".monaco-editor .scroll-decoration": "display: none",
-        ".title-actions": "display: none !important",
-        ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-        ".title .monaco-icon-label:after": "margin-right: 0",
-        ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
-        ".title .monaco-icon-label.file-icon": "margin: 0 60px",
-        ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)",
-        ".titlebar": "background: #191521 !important; color: #FFFFFF !important; box-shadow: none !important; border-bottom: none !important"
-    },
-    /* =========================================================
+  "window.titleBarStyle": "custom",
+  "custom-ui-style.font.sansSerif": "JetBrains Mono",
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)",
+    ".titlebar": "background: #191521 !important; color: #FFFFFF !important; box-shadow: none !important; border-bottom: none !important",
+  },
+  /* =========================================================
      🎨 CORES E TOKENS
      ========================================================= */
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "comment",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic",
+        },
+      },
+    ],
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.background": "#000000",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+    "editorOverviewRuler.selectionHighlightForeground": "#0000",
+    "editorOverviewRuler.rangeHighlightForeground": "#0000",
+    "editorOverviewRuler.wordHighlightForeground": "#0000",
+    "editorOverviewRuler.bracketMatchForeground": "#0000",
+    "editorOverviewRuler.findMatchForeground": "#0000",
+    "editorOverviewRuler.modifiedForeground": "#0000",
+    "editorOverviewRuler.deletedForeground": "#0000",
+    "editorOverviewRuler.warningForeground": "#0000",
+    "editorOverviewRuler.addedForeground": "#0000",
+    "editorOverviewRuler.errorForeground": "#0000",
+    "editorOverviewRuler.infoForeground": "#0000",
+    "editorOverviewRuler.border": "#0000",
+    "editorRuler.foreground": "#ffffff10",
+    "[Aura Dracula Spirit (Soft)]": {
+      "editorSuggestWidget.selectedBackground": "#3A334B",
+      "sideBar.background": "#191521",
     },
-    "workbench.colorCustomizations": {
-        "editorCursor.background": "#000000",
-        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
-        "editorOverviewRuler.selectionHighlightForeground": "#0000",
-        "editorOverviewRuler.rangeHighlightForeground": "#0000",
-        "editorOverviewRuler.wordHighlightForeground": "#0000",
-        "editorOverviewRuler.bracketMatchForeground": "#0000",
-        "editorOverviewRuler.findMatchForeground": "#0000",
-        "editorOverviewRuler.modifiedForeground": "#0000",
-        "editorOverviewRuler.deletedForeground": "#0000",
-        "editorOverviewRuler.warningForeground": "#0000",
-        "editorOverviewRuler.addedForeground": "#0000",
-        "editorOverviewRuler.errorForeground": "#0000",
-        "editorOverviewRuler.infoForeground": "#0000",
-        "editorOverviewRuler.border": "#0000",
-        "[Aura Dracula Spirit (Soft)]": {
-            "editorSuggestWidget.selectedBackground": "#3A334B",
-            "sideBar.background": "#191521"
-        }
-    },
-    /* =========================================================
+  },
+
+  // --- Visual e Réguas ---
+  "editor.rulers": [80, 120],
+
+  // --- Comportamento de Escrita ---
+  "editor.wordWrap": "off", // Não quebra a linha visualmente; deixa o formatador agir
+
+  // --- Automação e Formatação ---
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Exige extensão Prettier
+
+  // Configurações específicas para evitar conflitos
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  /* =========================================================
      ⚙️ OUTROS
      ========================================================= */
-    "emmet.triggerExpansionOnTab": true,
-    "update.mode": "none",
-    "update.showReleaseNotes": false,
-    "extensions.ignoreRecommendations": true
+  "emmet.triggerExpansionOnTab": true,
+  "update.mode": "none",
+  "update.showReleaseNotes": false,
+  "extensions.ignoreRecommendations": true,
+  "cSpell.language": "en,pt,pt_BR",
+  "diffEditor.codeLens": true,
 }
